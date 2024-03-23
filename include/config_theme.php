@@ -86,12 +86,14 @@ function custom_url() {
 add_filter( 'login_headerurl', 'custom_url');
 
 /* Modifie le logo de connexion de wordpress */
+if (!function_exists('virgin_my_custom_login_logo')) {
 function virgin_my_custom_login_logo() {
   echo '<style type="text/css">
   h1 a { background-image:url('.get_bloginfo('template_directory').'/img/logo.png) !important; }
   </style>';
 }
-add_action('login_head', 'virgin_my_custom_login_logo');
+add_action('login_head', 'virgin_my_custom_login_logo', 10);
+}
 
 /* Cache le logo WORDPRESS dans le dashboard */
 function example_admin_bar_remove_logo() {
