@@ -1,3 +1,1 @@
-<div>
-    <?php dynamic_sidebar('footer');?>
-</div>
+<?php dynamic_sidebar('footer');?>
