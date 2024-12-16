@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <?php get_header();?>
 <div class="virgin">
-    <div style="padding: 15%; text-align: center">
+    <section style="padding: 15%; text-align: center">
         <h2>ERROR 404</h2>
-    </div>
+    </section>
 </div>
 <?php get_footer()?>
